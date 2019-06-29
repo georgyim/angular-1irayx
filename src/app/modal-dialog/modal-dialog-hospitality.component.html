@@ -1,0 +1,32 @@
+<ng-container *ngIf="isOpen">
+  <div class="modal-container" (click)="close($event)">
+    <div class="modal-content">
+      <div class="close">
+        <button (click)="close()">Закрыть</button>
+      </div>
+      <div class="modal-header">
+        <h2>Информация о госпитализации</h2>
+      </div>
+      <div class="modal-body">
+        <div>
+          <label>Имя доктора</label>
+          {{doctor.name}}
+        </div>
+        <div>
+          <label>Имя пациента</label>
+          {{patient.name}}
+        </div>
+        <div>
+          <label>Диагноз</label>
+          {{hospitality.diagnosis}}
+        </div>
+        <div>
+          <label>Дата</label>
+          {{hospitality.date | date: 'dd.MM.yy hh:mm'}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ng-container>
+

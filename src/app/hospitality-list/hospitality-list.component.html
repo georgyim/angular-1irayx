@@ -1,0 +1,55 @@
+<div>
+
+  <div class="hospitality-filter">
+    <app-hospitality-filter
+      [doctors]="doctorList"
+      [patients]="patientsList"
+      (filterEmitter)="filterHanlder($event)"
+    ></app-hospitality-filter>
+
+  </div>
+
+
+  <div>
+    <table>
+      <tr>
+        <th>
+          <div class="title">Идентификатор</div>
+          <app-sort (sortEmitter)="sort($event)" sortProperty="id"></app-sort>
+        </th>
+        <th>
+          <div class="title">Идентификатор врача</div>
+          <app-sort (sortEmitter)="sort($event)" sortProperty="doctorId"></app-sort>
+        </th>
+        <th>
+          <div class="title">Идентификатор пацицента</div>
+          <app-sort (sortEmitter)="sort($event)" sortProperty="pacientId"></app-sort>
+        </th>
+        <th>
+          <div class="title">Дата</div>
+          <app-sort (sortEmitter)="sort($event)" sortProperty="date"></app-sort>
+        </th>
+        <th>
+          <div class="title">Диагноз</div>
+          <app-sort (sortEmitter)="sort($event)" sortProperty="diagnosis"></app-sort>
+        </th>
+      </tr>
+      <tbody>
+      <tr *ngFor="let h of hospitalityList" (click)="openDialog(h)">
+        <td>{{h.id}}</td>
+        <td>{{h.doctorId}}</td>
+        <td>{{h.patientId}}</td>
+        <td>{{h.date | date: 'dd.MM.yy hh:mm'}}</td>
+        <td>{{h.diagnosis}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    Пагинация
+  </div>
+
+</div>
+
+<app-modal-dialog #modaDialog></app-modal-dialog>

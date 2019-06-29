@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="upward sort-block" (click)="sort(true)">
+    <i class="material-icons" [ngClass]="{'active': isUpDirection()}" >
+      arrow_upward
+    </i>
+  </div>
+  <div class="downward sort-block" (click)="sort()">
+    <i class="material-icons" [ngClass]="{'active': isDownDirection()}">
+      arrow_downward
+    </i>
+  </div>
+</div>
+

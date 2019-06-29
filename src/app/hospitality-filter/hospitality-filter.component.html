@@ -1,0 +1,31 @@
+<div class="filter-container">
+  <form class="form" *ngIf="filterForm" [formGroup]="filterForm">
+    <div class="filter-block filter-block--doctor">
+      <label>Выбрать врача</label>
+      <select formControlName="doctorControl">
+        <option [ngValue]="null"></option>
+        <option [ngValue]="doctor" *ngFor="let doctor of doctorList">{{doctor.name}}</option>
+      </select>
+    </div>
+    <div class="filter-block filter-block--patient">
+      <label>Выбрать пациента</label>
+      <select formControlName="patientControl">
+        <option [ngValue]="null"></option>
+        <option [ngValue]="patient" *ngFor="let patient of patientList">{{patient.name}}</option>
+      </select>
+    </div>
+    <div class="filter-block filter-block--date">
+      <label> Период</label>
+      <label>С </label>
+      <input type="date" formControlName="fromDateControl">
+      <label>По </label>
+      <input type="date" formControlName="toDateControl">
+    </div>
+  </form>
+
+
+  <div>
+    <button (click)="filter()">Отфильтровать</button>
+  </div>
+</div>
+

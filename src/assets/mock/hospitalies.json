@@ -1,0 +1,65 @@
+[
+  {
+    "doctorId": 1,
+    "id": 1,
+    "patientId": 1,
+    "date": "05.10.2016",
+    "diagnosis": "diagnosis_1"
+  },
+  {
+    "doctorId": 2,
+    "id": 2,
+    "patientId": 1,
+    "date": "03.12.2019",
+    "diagnosis": "diagnosis_2"
+  },
+  {
+    "doctorId": 3,
+    "id": 3,
+    "patientId": 2,
+    "date": "05.12.2016",
+    "diagnosis": "diagnosis_3"
+  },
+  {
+    "doctorId": 3,
+    "id": 4,
+    "patientId": 1,
+    "date": "03.09.2012",
+    "diagnosis": "diagnosis_4"
+  },
+  {
+    "doctorId": 3,
+    "id": 5,
+    "patientId": 2,
+    "date": "02.04.2018",
+    "diagnosis": "diagnosis_5"
+  },
+  {
+    "doctorId": 1,
+    "id": 6,
+    "patientId": 2,
+    "date": "08.04.2019",
+    "diagnosis": "diagnosis_1"
+  },
+  {
+    "doctorId": 1,
+    "id": 7,
+    "patientId": 3,
+    "date": "08.05.2011",
+    "diagnosis": "diagnosis_7"
+  },
+  {
+    "doctorId": 1,
+    "id": 8,
+    "patientId": 3,
+    "date": "03.10.2017",
+    "diagnosis": "diagnosis_8"
+  },
+  {
+    "doctorId": 1,
+    "id": 9,
+    "patientId": 3,
+    "date": "03.10.2010",
+    "diagnosis": "diagnosis_9"
+  }
+]

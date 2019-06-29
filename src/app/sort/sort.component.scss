@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  .sort-block {
+    cursor: pointer;
+
+    .material-icons {
+      color: #7f7b72;
+    }
+
+    .active {
+      color: #000;
+    }
+
+  }
+
+}
